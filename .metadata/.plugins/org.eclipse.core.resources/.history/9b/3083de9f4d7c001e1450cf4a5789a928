@@ -1,0 +1,5 @@
+package com.emp.EmployeeDetails.dto;
+
+public class EmployeeDto {
+
+}

@@ -1,0 +1,20 @@
+package com.emp.EmployeeDetails.dto;
+
+import jakarta.persistence.Column;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmployeeDto
+{
+	private long id;
+	private String firstName;
+	private String lastname;
+	private String email;
+	private Long departmentId;
+	private DepartmentDto departmentdto;
+}

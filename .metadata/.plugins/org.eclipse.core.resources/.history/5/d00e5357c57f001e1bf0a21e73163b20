@@ -1,0 +1,131 @@
+package com.emp.EmployeeDetails.controller;
+
+import java.net.URI;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import com.emp.EmployeeDetails.Exception.EmployeeNotFoundException;
+import com.emp.EmployeeDetails.JpaRepository.EmployeeBankRepository;
+import com.emp.EmployeeDetails.JpaRepository.EmployeeRepository;
+import com.emp.EmployeeDetails.dto.Employee;
+import com.emp.EmployeeDetails.dto.EmployeeBankAccounts;
+import com.emp.EmployeeDetails.responseStructure.EmployeeResponseStructure;
+import com.emp.EmployeeDetails.service.EmployeeService;
+
+@RestController
+public class EmployeeController
+{
+	private EmployeeService employeeService;
+	private EmployeeRepository employeeRepository;
+	private EmployeeBankRepository employeeBankRepository;
+
+	public EmployeeController(EmployeeService employeeService, EmployeeRepository employeeRepository, EmployeeBankRepository employeeBankRepository) {
+		super();
+		this.employeeService = employeeService;
+		this.employeeRepository=employeeRepository;
+		this.employeeBankRepository=employeeBankRepository;
+	}
+	
+	@PostMapping("/emp")
+	public Employee createEmploye(@RequestBody Employee employee)
+	{
+		return employeeService.saveemployee(employee);
+	}
+	@PutMapping("/emp/{id}")
+	public Employee updateEmployee(@PathVariable int id,@RequestBody Employee employee)
+	{
+		return employeeService.update(employee);
+	}
+	
+	@GetMapping("/emp")
+	public List<Employee> retriveAllEmployeesData()
+	{
+		return employeeService.AllEmployees();
+	}
+	
+	@GetMapping("/emp/{id}")
+	public Employee retriveByIdEmployee(@PathVariable int id)
+	{
+		return employeeService.findEmployeeId(id);
+	}
+	@DeleteMapping("/emp/{id}")
+	public void deletebyEmployeeId(@PathVariable int id)
+	{
+		
+		employeeService.deleteById(id);
+	}
+//	@PostMapping("/emp")
+//	public ResponseEntity<EmployeeResponseStructure<Employee>> createEmploye(@RequestBody Employee employee)
+//	{
+//		return employeeService.saveemployee(employee);
+//	}
+//	@PutMapping("/emp/{id}")
+//	public ResponseEntity<EmployeeResponseStructure<Employee>> updateEmployee(@PathVariable int id,@RequestBody Employee employee)
+//	{
+//		return employeeService.update(employee);
+//	}
+//	
+//	@GetMapping("/emp")
+//	public ResponseEntity<EmployeeResponseStructure<List<Employee>>> retriveAllEmployeesData()
+//	{
+//		return employeeService.AllEmployees();
+//	}
+//	
+//	@GetMapping("/emp/{id}")
+//	public ResponseEntity<EmployeeResponseStructure<Employee>> retriveByIdEmployee(@PathVariable int id)
+//	{
+//		return employeeService.findEmployeeId(id);
+//	}
+//	@DeleteMapping("/emp/{id}")
+//	public ResponseEntity<Void> deletebyEmployeeId(@PathVariable int id)
+//	{
+//		
+//		return employeeService.deleteById(id);
+//	}
+	
+	
+	
+	// For Adding Employee Bank Account
+	@GetMapping("/emp/{id}/bank")
+	public List<EmployeeBankAccounts> retivePostData(@PathVariable int id)
+	{
+		Optional<Employee> employee=employeeRepository.findById(id);
+		if(employee.isEmpty())
+			throw new EmployeeNotFoundException("Id  ........:  "+id);
+		
+		
+		return employee.get().getBankAccounts();
+		
+	}
+	
+	
+	@PostMapping("/emp/{id}/bank")
+	public ResponseEntity<Object> createPostforUser(@PathVariable int id, @RequestBody EmployeeBankAccounts accounts)
+	{
+		java.util.Optional<Employee> employee= employeeRepository.findById(id);
+		if(employee.isEmpty())
+			throw new EmployeeNotFoundException("Id  ........:  "+id);
+		accounts.setEmployee(employee.get());
+		EmployeeBankAccounts saveBankAccounts=employeeBankRepository.save(accounts);
+		
+		URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+				.path("/{id}").buildAndExpand(saveBankAccounts.getId())
+				.toUri();
+		return ResponseEntity.created(location).build();
+		
+	}
+	
+	//connecting To projects one to many-many to one
+	
+	
+}

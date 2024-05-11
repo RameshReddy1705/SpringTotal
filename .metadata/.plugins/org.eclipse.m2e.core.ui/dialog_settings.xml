@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\rgang\Downloads\hospital-branch-BackEnd"/>
+			<item value="D:\Ramesh Latest Hyd\Masai-Travels-RESTful-API"/>
+			<item value="D:\1Spring\Masai-Travels-RESTful-API"/>
+			<item value="D:\1Spring\Reservation"/>
+			<item value="D:\1Spring\Todo_Application"/>
+			<item value="C:\Users\rgang\Downloads\Back_End_Employee_Management_System"/>
+			<item value="C:\Users\rgang\Downloads\Lap_Web_Application"/>
+			<item value="C:\Users\rgang\Downloads\Student_Web_Application"/>
+			<item value="C:\Users\rgang\Downloads\springBoot04"/>
+			<item value="C:\Users\rgang\Downloads\springBoot04Person"/>
+			<item value="C:\Users\rgang\Downloads\SpringBoot04WebFirst"/>
+			<item value="C:\Users\rgang\Downloads\SpringBoot04_First_Web"/>
+			<item value="C:\Users\rgang\Downloads\SpringBoot04WebFirst (1)"/>
+			<item value="C:\Users\rgang\Downloads\SpringBoot04_First_Web_Application"/>
+			<item value="C:\Users\rgang\Downloads\EmployeeDetails"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\1Spring\EmployeeDetails-02\src\main\java\com\emp\EmployeeDetails\EmployeeDetailsApplication02Dummy.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>
