@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#nav{
+    background-color: rgb(36, 34, 34);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+#nav>article{
+    height: 99px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+}
+#nav>article>.logo{
+    height: 99px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-right: 30px;
+}
+#nav>article>.menu{
+    display: flex;
+    align-items: center;
+    height: 99px;
+    width: 80%;
+}
+#nav>article>.menu>.list{
+    display: flex;
+    align-items: center;
+    height: 99px;
+    width: 50%;
+}
+#nav>article>.menu>.list>ol{
+    display: flex;
+    list-style-type: none;
+    height: 99px;
+    width: 100%;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+#nav>article>.menu>.list>ol>li>a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    justify-content: space-evenly;
+}
+#nav>article>.menu>.empty{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 99px;
+}
+#nav>article>.menu>.sup{
+    display: flex;
+    align-items: center;
+    height: 99px;
+    width: 25%;
+}
+#nav>article>.menu>.sup>ol{
+    display: flex;
+    list-style-type: none;
+    height: 99px;
+    width: 100%;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+#nav>article>.menu>.sup>ol>li>a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    font: 12px basis bold;
+    justify-content: space-evenly;
+}
+#nav>article>.search>a{
+    display: flex;
+    align-items: center;
+    height: 99px;
+    margin-right: 23px;
+}
+#nav>article>.tata>a{
+    display: flex;
+    align-items: center;
+    height: 99px;
+    margin-right: 25px;
+}

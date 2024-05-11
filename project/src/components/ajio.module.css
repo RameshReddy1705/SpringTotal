@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+#shop{
+    height: 90px;
+    width: 100%;
+    background-color:#0001;
+    display: flex;
+    /* justify-content: center; */
+}
+#shop>article{
+    height: 100px;
+    width: 110%;
+    /* border: 2px solid red; */
+    display: flex;
+   
+}
+#shop>article>.Logo{
+    height: 90px;
+    /* background-color: aqua; */
+    width: 5%;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+#shop>article>.letter{
+    width: 50%;
+    /* background-color: blue; */
+    align-items: center;
+    margin-top: 60px;
+    color: black;
+    margin-left: 10%;
+    font-size: medium;
+}
+#shop>article>.multi{
+    height: 110px;
+    width: 30%;
+    /* background-color: aqua; */
+    margin-top: 10px;
+   margin-right: 5%;
+}
+#shop>article>.letter>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: medium;
+    /* margin-top: 20px; */   
+}
+ 
+#shop>article>.multi>div>ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+   
+}
+#a{
+    background-color: black;
+    color: white;
+    font-size: small;
+}

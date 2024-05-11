@@ -1,0 +1,1099 @@
+
+WEB-Tech :
+-----------
+
+1: HTML-hyper text markup langauge
+it is used to create a structure of a Webpage 
+
+2: CSS :(cascading style sheets)
+It is used to apply styles on the web page 
+
+3:js(Java Script )
+-it is used to create dynamic pages 
+-it is used to make webpages interactive 
+-it is used to add functionalites like on click ,onmouseover ,on submit and many more.
+
+
+using only these 3 web-tech we can create proper structural,beautiful,functionalit 
+web pages then why do we need advance concepts like react-js,angular-js  jquery etc
+-to make web page better faster in operation 
+
+
+
+Frameworks:
+------------
+-it is collection of multiple libraries
+eg:angular js,vue-js etc
+
+React-js:
+-:it is introduced in the year 2013 by a reputated organization facebook
+-:facebook,whatsapp,telegram,netflix are built through react-js
+
+
+What is React js?
+-React-js is a library of java Script
+-it is nothing but a collection of predefined codes which we implement in our project to make our web page faster 
+
+Features of React-js
+--------------------
+
+1:Single page application :
+-spa is nothing but whatever we navigate from one web page to another we are going to reload or refresh again and again 
+eg:- gmail,facebook,whatsapp,youtube etc
+
+
+2 component based architecture 
+-react follows CBA because for better code maintenance
+-web-page will be divided into small parts and that small parts are known as component based architectute.
+
+eg:
+navigate
+
+content 
+
+Footer 
+
+
+in the above requirement we are dividing the web page into 3 parts which are 
+
+1: Nav.jsx
+All the code required to create a Navibar is written in this component itself
+
+
+2: Content.jsx
+All the code required to create a content is written in this components 
+
+
+3: Footer.jsx
+
+All the code required to create  is written in this components 
+
+
+4:Declarative 
+-react is known as Declarative because of its predefined codes 
+-react knowns what to do because it is already written in the form of predefined codes 
+
+
+Folder Structure of React-js
+
+After Successfull installation of react-js ,we will be getting some default folders and files 
+
+
+1: node - modules :
+- it is a folder where all predefined codes of react-js will be present 
+-warning (do not toch this folder)
+
+2: public :
+- This folder conatins the main structure of the webpage.
+-the only important file we have to maintain is "intex.html"
+
+3: src:
+- it is a source folder where we are going to write the code 
+- the 2 important files we have to maintain is 
+*index.js (it is considered as a root file of recat js )
+*App.js (it is considered as component )
+
+
+4:package-lock.json and package.json:
+
+-these are the two files where it is considered as a directories of the react folder 
+-it will give you all the information  about libraries present in the project
+
+What is JSk
+It is a combination of JavaScript and XML(xtensible markup langauge)
+
+Difference between HTML and Xml
+1:In html we will use attribute as a "class"
+-in XML we will use  attribute as a "className"
+
+2:All the elements used in the html is in lower case
+eg:onclick,onmouseover,onsubmit
+
+All the events in the xml used is in CameCase
+Eg:onClick,onMouseOver,onSubmit
+
+
+
+3:IN html we can write 2 different tags 
+eg:<h1>heading</h1>
+<p></p>
+
+IN Xml we have Wrap up all the content into one container 
+eg:<div>
+<h1>heading</h1>
+<p></p>
+</div>
+
+
+React Project setup;
+
+After Deleting all default src we have to create our own src and in src we have to maintain two important files 
+1:index.js
+2-it  is considered as a root file of the project 
+-we are using this file to create root between the index .html and index.js
+
+2: App.jsx
+-it is the component where we will be writing our own code to execute 
+
+
+index.js:
+import{createRoot} from "react-dom/client"
+import App from "./App"
+createRoot(document.getElementById("root")).render(<App/>)
+
+App.js
+const App=()=>{
+    return(
+        <h1>Hellow World</h1>
+    )
+}
+export default App;
+
+
+After Installation setup we have to create a folder inside src and that folder name will "components"
+-after creating components folder "App" Component will be kept as a parent component 
+-Whatever the components we create inside the folder "components" will be considered as child components 
+
+eg: Creating a child component naming as "Nav.jsx"
+
+Nav.jsx
+
+Const Nav=()=>{
+
+return (
+<div>
+<ha>Navbar</h1>
+</div>
+)
+}
+export default Nav
+
+
+-import the child component which is "Nav.jsx" inside parent component which is "App.jsx"
+
+App.jsx
+
+import Nav from "./Component/Nav"
+
+const App=()=>{
+    return(
+        <div>
+        <h1>Hellow World</h1>
+       
+        <Nav/>
+      
+        </div>
+    )
+}
+export default App;
+
+7/4/23
+-------
+
+React Project setup:
+-------------------
+
+After deleting the defalult src we have to create our own src and in src we have to maintain two important files:
+1:index.js
+  -:It is considered as root file of the project
+  -: we are using this file to create root between the index.html and index.js
+
+2:App.jsx
+  -: It is Component where we all be writing our own code to execute
+
+index.js:
+--------
+import {createRoot} from "react-dom/client"
+import App from "./App"
+createRoot(document.getElementById("root")).render(<App/>)
+
+App.jsx:
+---------
+const App = ()=>{
+    return(
+        <div>
+            <h1>Hello World</h1>
+            <h1>Sreekanth Reddy</h1>
+        </div>
+    )
+}
+
+export default App
+
+8/4/2023
+------------
+-:After installation setup we have to create a folder inside src and that folder name will "Components"
+-:After creatingn components folder "App" Component will be kept as parent component.
+-:whatever the components we create inside the folder "Components" will be Considered as Child components.
+
+eg:
+Creating a child Component naming as "Nav.jsx"
+
+Nav.jsx:
+------------
+
+const Nav =()=>{
+    return(
+        <section>
+            <h1>NAVBAR</h1>
+        </section>
+    )
+}
+
+export default Nav
+
+-:import the child Component which is "Nav.jsx" inside parent Component which is "App.jsx"
+
+App.jsx
+-------------
+import Nav from "./Components/Nav"
+
+const App = ()=>{
+    return(
+        <div>
+            </Nav>
+        </div>
+    )
+}
+
+export default App
+
+
+Types of Components
+--------------------
+      |-------------------------------------------------|
+      |	Function Based          |Class Based Concept	|
+      |----------------------------|-----------------------|
+      |	1) Js Function	            |1) Class		|
+      |	2) Stateless		    |2) Statefull           |
+      |	3) Hooks		           |3) No Hooks 		|
+      |	4) No life-cycle methods|4) Life-cycle Methods  |
+      |	5) No rendor method	 |5) Rendor method used  |
+      |-------------------------------------------------|
+Classbased.jsx-:
+-----------------
+import { Component } from "react";
+class classbased extends Component{
+    render(){
+        return(
+            <h1>Hello Classbased</h1>
+        )
+    }
+}
+
+export default classbased
+
+11/04/2023
+------------
+
+Props(Properties):
+
+1. Props are inbuilt Objects.
+2. Props are used to send the data from Parent Component to Child Component.
+3. Props are immutable, it means once the value is passed from Parent Component it cannot be changed.
+4. Props are uni-directional.
+
+P1. Write a program to send a string datatype as a Prop?
+
+App.jsx (Parent-Component)
+-------------------------------------------------------
+import Child from "./Components/Child"
+const App=()=>{
+return(
+<div>
+<Child data="Hello"/>
+</div>
+)
+}
+export default App
+
+Child.jsx (Child Component)
+------------------------------------------------------
+const Child=(x)=>{
+console.log(x)   //object
+return(
+<div>
+{x.data}
+</div>
+)
+}
+export default Child
+
+P2. Write a Program to send an Array datatype as a Prop?
+
+App.jsx (Parent-Component)
+---------------------------------------------------------
+import Child from "./Components/Child"
+const App=()=>{
+return(
+<div>
+<Child data={["Hi","Hello","Bye"]}/>
+</div>
+)
+}
+export default App
+
+Child.jsx (Child Component)
+------------------------------------------------------------
+const Child=(x)=>{
+console.log(x)   //object
+return(
+<div>
+{x.data[0]} //Hi
+{x.data[1]} //Hello
+{x.data[2]} //Bye
+</div>
+)
+}
+export default Child
+
+P3. Write a Program to send an Object datatype as a Prop?
+
+App.jsx (Parent-Component)
+---------------------------------------------------------
+import Child from "./Components/Child"
+const App=()=>{
+let Obj={name:"Rocky",id:123}
+return(
+<div>
+<Child data={Obj}/>
+</div>
+)
+}
+export default App
+
+Child.jsx (Child Component)
+------------------------------------------------------------
+const Child=(x)=>{
+console.log(x)   //object
+return(
+<div>
+{x.data.name}  //Rocky
+</div>
+)
+}
+export default Child
+
+
+P4. Write a Program to send an Array of Object as a Prop?
+
+App.jsx (Parent-Component)
+---------------------------------------------------------
+import Child from "./Components/Child"
+const App=()=>{
+let webTech=[
+{name:"HTML",id:123},
+{name:"CSS",id:456},
+{name:"JS",id:789}
+]
+return(
+<div>
+<Child data={webTech}/>
+</div>
+)
+}
+export default App
+
+Child.jsx (Child Component)
+------------------------------------------------------------
+const Child=(x)=>{
+console.log(x)  //object {data:[]}
+console.log(x.data)  //Array [{},{},{}]
+console.log(x.data[0])  //Object {name: "",id:number} 
+console.log(x.data[0].name) //HTML 
+return(
+<div>
+            <h1>{x.data[0].name} is for Structure</h1>              //HTML    
+            <h1>{x.data[1].name}is for Styles</h1>                   //CSS
+            <h1>{x.data[2].name} is for Functionality </h1>     //JS
+            <h1>{x.data[0].id}</h1>      //123
+            <h1>{x.data[1].id}</h1>      //456
+            <h1>{x.data[2].id}</h1>      //789
+</div>
+)
+}
+export default Child
+
+12/4/2023
+-----------
+Props Drilling:
+---------------
+-:It is a process by which you pass the data from one part of the react to another by going through other parts that do not need the data but
+only help is passing it around.
+
+example:
+---------
+
+App.jsx(parent-Component)
+---------------------------
+import A from "./Components/A"
+const App = ()=>{
+  let webtech=[{name:"HTML",id:123},
+               {name:"CSS",id:456},
+               {name:"JS",id:789}]
+    return(
+        <div>
+            {/* <Nav/>
+                <Content/>
+    <Footer/>*/}
+    {/*<Child data={person}/>*/}
+    {/*<Task1 data={webtech}/>*/}
+    { <A data="Hi"/> }
+        </div>
+    )
+}
+
+export default App
+
+A.jsx (Child-Component)
+-----------------------
+import B from "./B"
+const A=(props)=>{
+    console.log(props);
+    return(
+        <div>
+            <B data1={props.data}/>
+        </div>
+    )
+}
+
+export default A
+
+Y.jsx (grandChild Component)
+-------------------------------
+const Y=(props)=>{
+    console.log(props)    //object
+    return(
+      <div>
+        {props.data1}
+      </div>
+     )
+}
+export default Y
+
+15/04/2023
+----------
+States in React Js:-
+-States are used to create dynamic data in the UI.
+-States are mutable, states values can be changed.
+-States are local, States belongs to one particular component
+ We can't share the states between componenets like props.
+-By default function based components are statesless, it means 
+ we don't have inbuilt state objects in FBC.
+-But we can FBC statefull by usung an advanced feature called 'Hooks'.
+ and the Hook which we used  to make FBC statefull is 'useState'.
+
+Hooks:-
+-------
+-Hooks are like inbuilt methods in React Js.
+-Hooks always start from a prefix word 'use'.
+-Whenever we want to use Hooks  we have to import it from React library
+ import statements are mandatory.
+-Hooks are only used in function  Based Components.
+-We have many Hooks in React these are the few below Hooks
+	1.useState
+	2.useEffect
+	3.useContent and many more.
+
+useState:-
+----------
+-It is Hook where we use in FBC to create states.
+-syantax:-
+
+Example:-
+Write a program for passing a string inside states?
+
+States.jsx:-
+----------	
+import { useState } from "react"
+
+const States=()=>{
+    let[data,setData]=useState("Ramesh Reddy")
+    let Reddy=()=>{
+        setData("Siva Reddy")
+    }
+    return(
+        <div>
+            <h1>{data}</h1>
+            <button onClick={Reddy}>Change</button>
+        </div>
+    )
+}
+export default States
+
+Example2:-
+Write a program for passing an array inside states?
+
+StatesArray:-
+------------
+import { useState } from "react"
+
+const StatesArray=()=>{
+    let [Array]=useState(["Ramesh","Reddy"])
+    return(
+        <div>
+            <h1>{Array[0]}</h1>
+            <h1>{Array[1]}</h1>
+        </div>
+    )
+}
+export default StatesArray
+
+Example3:-
+Write a program for passing an object inside states?
+
+StatesObjects:-
+-----------------
+import { useState } from "react"
+
+const StatesObjects=()=>{
+    let [Objects]=useState({name:"Ramesh",id:3,number:12345})
+    return(
+        <div>
+            <h1>{Objects.name}</h1>
+            <h1>{Objects.id}</h1>
+            <h1>{Objects.number}</h1>
+
+        </div>
+    )
+}
+export default StatesObjects
+
+Example4:-
+Write a program for increment, decrement, reset?(Imp..........)
+
+TaskCal:
+----------
+import { useState } from "react"
+
+const TaskCal=()=>{
+    let [count,setcount]=useState(0)
+    let In=()=>{
+        setcount(count+1)
+    }
+    let De=()=>{
+        setcount(count-1)
+    }
+    let Re=()=>{
+        setcount(0)
+    }
+    return(
+        <div>
+            <h1>{count}</h1>
+            <button onClick={In}>Increment</button>
+            <button onClick={De}>Decrement</button>
+            <button onClick={Re}>Reset</button>
+            
+
+        </div>
+    )
+}
+export default TaskCal
+
+
+List in React:-
+-----------------
+-To display data in an ordered format.
+-The map( ) is used to tranverse the list.
+Example5:-
+FetchData:-(v imp............................)
+--------------
+import { Fragment, useState } from "react"
+import Details from "./userData.json"
+const FetchData=()=>{
+    let [Data,setData]=useState(Details)
+    console.log(Data)
+    return(
+        <div>
+            {
+                Data.map((x)=>{
+                    return(
+                        <Fragment key={x.id}>
+                            <h1>{x.login}</h1>
+                            <h1>{x.id}</h1>
+                            <h1>{x.html_url}</h1>
+                            <img src={x.avatar_url} alt="" />
+                            <h1>{x.html_url}</h1>
+                        </Fragment>
+                    )
+                })
+            }
+        </div>
+    )
+}
+export default FetchData
+
+09:23 19-04-2023
+-----------------------
+
+Types of CSS in react:
+1.Inline Css
+2.Global Css
+3.Module.css
+
+1.Inline Css:-
+- It is type of css where will be applying for individually inside one particular tagusing style attributes
+- The css properties should be written inside an expression in the form of "Object".
+Ex:-
+
+
+
+
+
+
+2.Global Css:-
+---------------
+- It is a type of css where will be maintaining one css file for entire react project.
+- It will target all components.
+- We have to create a separate file inside src with an extension  of ".css" and write all the style
+
+Ex:-
+App.jsx:-
+----------
+import Hiii from "./React/Hiii"
+import Hiii1 from "./React/Hiii1"
+import "./global.css"
+const App3=()=>{
+    
+    return(
+        <div>
+          
+          <Hiii></Hiii>
+          <Hiii1></Hiii1>
+        </div>
+    )
+}
+export default App3
+Child.jsx:-(Hiii.jsx-File name)
+-----------------------------------
+const Hiii=()=>{
+    return(
+        <div>
+            <h1 style={{backgroundColor:"gray",width:"fit-content"}}>Ramesh Reddy</h1>
+        </div>
+    )
+}
+export default Hiii
+
+Child.jsx:-(Hiii1.jsx-File name)
+------------------------------------
+const Hiii1=()=>{
+    return(
+        <div>
+            <h1>Ramesh Reddy</h1>
+        </div>
+    )
+}
+export default Hiii1
+
+global.css:-
+-------------
+h1{
+    border: solid black 6px;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+3.Module.css:-
+-----------------
+- In react This css is the most used type of css
+- We will be creating a separate css file for each componenet
+- The respective styles  required for that particular component will be written in their respective css files.
+- When ever we have using module css we have to create css file with an extension "module.css".ex:-"filename.module.css".
+
+Ex:-
+Myntra1.jsx:-
+---------------
+import img from "./mynt.png"
+import style from "./myntra1.module.css"
+import profile from"./profile.png"
+import bag from "./bag.png"
+import wishlist from "./wishlist.png"
+const Myntra1=()=>{
+    return(
+       <section id={style.nav}>
+            <article>
+                <div className={style.Logo}>
+                {/* <a href="https://www.myntra.com/"></a> */}
+                <a href="https://www.myntra.com/"><img src={img}alt=""/></a>
+                </div>
+                <div className={style.Menu}>
+                <ol>
+                        <li><a href="https://www.myntra.com/shop/men">MEN</a></li>
+                        <li><a href="https://www.myntra.com/shop/women">WOMEN</a></li>
+                        <li><a href="https://www.myntra.com/shop/kids">KIDS</a></li>
+                        <li><a href="https://www.myntra.com/shop/home-living">HOME & LIVING</a></li>
+                        <li><a href="https://www.myntra.com/personal-care">BEAUTY</a></li>
+                        <li><a href="https://www.myntra.com/studio/home?appRoute=%7B%22url%22%3A%22%2Fstudio%2Fhome%22%7D">STUDIO<sup>NEW</sup></a></li>
+                    </ol>
+                </div>
+                <div className={style.Search}>
+               
+                    <div>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <input type="text" placeholder={"Search for products,brands and more"} />
+                    </div>
+                </div>
+                <div className={style.Icons}>
+                    <ol>
+                        <li>
+                        <a href=""><img src={profile} alt="" /></a></li>
+                        <li> <a href="https://www.myntra.com/checkout/cart"><img src={bag} alt="" /></a></li>
+                        <li><a href="https://www.myntra.com/wishlist"><img src={wishlist} alt="" /></a> </li>
+                    </ol>
+                    {/* <div>
+                        <a href=""><img src={profile} alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="https://www.myntra.com/checkout/cart"><img src={bag} alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="https://www.myntra.com/wishlist"><img src={wishlist} alt="" /></a>
+                    </div> */}
+                </div>
+            </article>
+       </section>
+    )
+}
+export default Myntra1
+
+mynta1.module.css:-
+------------------------
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 25px gray;
+    display: flex;
+    justify-content: center;
+}
+#nav>article{
+    height: 80px;
+    width: 93%;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+#nav>article>.Logo{
+    height: 80px;
+    width: 6%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav>article>.Logo>a>img{
+    height: 65%;
+    width: 60%;
+}
+#nav>article>.Menu{
+    height: 80px;
+    width: 40%;
+    /* background-color: brown; */
+}
+#nav>article>.Menu>ol{
+    display: flex;
+    list-style-type: none;
+    height: 79px;
+    align-items: center;
+    color: black;
+    justify-content: space-evenly;
+}
+
+#nav>article>.Menu>ol>li>a{
+    text-decoration: none;
+    color: rgb(61, 59, 59);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+sup{
+    color: rgb(249, 4, 139);
+    padding: 5px;
+    size: small;
+}
+#nav>article>.Search{
+    height: 80px;
+    width: 30%;
+    /* background-color: burlywood; */
+}
+#nav>article>.Search>div{
+    display: flex;
+    align-items: center;
+    height: 79px;
+    outline: none;
+    /* width: 90%; */
+    /* list-style-type: none; */
+    
+}
+#nav>article>.Search>div>input{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    padding: 10px;    
+}
+#nav>article>.Search>div>input:focus{
+    background-color: whitesmoke;
+    outline: none;
+}
+#nav>article>.Search>div>a>i{
+    margin-right: 15px;
+    margin-left: 10px;
+    color: gray;
+}
+#nav>article>.Icons{
+    height: 80px;
+    width: 24%;
+    /* background-color: chocolate; */
+}
+#nav>article>.Icons>ol{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+#nav>article>.Icons>ol>li>a>img{
+    height: 30px;
+    width: 50px;
+    
+}
+
+09:24 20-04-2023
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Q ) Write a program to create a Dark and Light theme
+
+const Theme=()=>{
+    let light=()=>{
+        document.body.style.background="gainsboro"
+        document.body.style.color="black"
+    }
+    let dark=()=>{
+        document.body.style.background="black"
+        document.body.style.color="white"
+
+    }
+
+    return(
+        <div>
+            <input type="radio" onClick={light}/>
+            <label htmlFor="">Light</label>
+            <input type="radio" onClick={dark}/>
+            <label htmlFor="">Dark</label>
+            <h1>Light & Dark</h1>
+        </div>
+    )
+}
+export default Theme 
+
+Ref ( References ):-
+-----------------------
+- It is inbuilt Object in react.
+- It is used to target the elements in react.
+- By default it will be having key value pair of "current : UD".
+- Ref will always uses real dom.
+- In FBC we use useRef hook to create reference.
+
+Ex:-
+----
+import { useRef } from "react"
+
+const Reference=()=>{
+    let dataref= useRef()
+    console.log(dataref)  //{ current : h1}
+    let color=()=>{
+        dataref.current.style.color="red"
+        // dataref.current.style.backgroundcolor="black"
+        // dataref.current.style.color="Whilte"
+    }
+    return(
+        <div>
+            <h1 ref={dataref}>Ramesh Reddy</h1>
+            <button onClick={color}>Change</button>
+        </div>
+    )
+}
+export default Reference
+
+08:51 24-04-2023
+----------------------
+
+Create an Uncontrolled form and perform  addition, subtraction, multi ?( Imp...)
+
+import { useRef, useState } from "react"
+
+const UnControlledCal=()=>{
+    let num1=useRef()
+    let num2=useRef()
+    let [result,setResult]=useState(0)
+
+    let add=()=>{
+        let a=Number(num1.current.value)
+        let b=Number(num2.current.value)
+        setResult(a+b)
+    }
+    let sub=()=>{
+        let a=Number(num1.current.value)
+        let b=Number(num2.current.value)
+        setResult(a-b)
+    }
+    let mul=()=>{
+        let a=Number(num1.current.value)
+        let b=Number(num2.current.value)
+        setResult(a*b)
+    }
+    return(
+        <div>
+            <label htmlFor="">Num-1</label>
+            <input type="text" ref={num1} />
+            <label htmlFor="">Num-2</label>
+            <input type="text" ref={num2} />
+            <button onClick={add}>Add  +</button>
+            <button onClick={sub}>Sub  -</button>
+            <button onClick={mul}>Mult  *</button>
+
+            <h1>{result}</h1>
+        </div>
+    )
+}
+export default UnControlledCal
+
+
+UnControlled Form:-
+----------------------------
+- It is a form where it is created  using references concept.
+- In FBC we use useRef to create uncontrollrd form.
+- These forms are completely handle by dom it self.
+- Suppose if we want to take  any data from user  first the data will be  taken by dom and then we will be taking the data from  Dom.
+
+UnControlledCal.jsx:-
+----------------------------
+import { useRef } from "react"
+
+const UncontrolledRef=()=>{
+    let name=useRef()
+    console.log(name)
+        let form=(e)=>{
+            e.preventDefault()
+            let a=name.current.value
+            console.log(a)
+        }
+    return(
+        
+        <div>
+            <form action="">
+                <label htmlFor="">Name</label>
+                <input type="text" ref={name}/>
+                <label htmlFor="">Number</label>
+                <input type="text"ref={num} />
+                <button onClick={form}>Submit</button>
+            </form>
+        </div>
+    )
+}
+export default UncontrolledRef
+
+2.Controlled Form:-
+-------------------------
+- These forms are created using states in react.
+- In FBC we use useState to create controlled forms.
+- These forms are completely  handled by developers where wewill be taking  the data directly from the users by using on change event.
+
+Ex:-
+Controlled.jsx:-
+-------------------
+import { useState } from "react"
+
+const Controlled=()=>{
+    let [name, setname]=useState("")
+    let [email, setemail]=useState("")
+    let [sal, setsal]=useState("")
+
+    let namedata=(e)=>{
+        setname(e.target.value)
+    }
+    let emaildata=(b)=>{
+        setemail(b.target.value)
+    }
+    let saldata=(a)=>{
+        setsal(a.target.value)
+    }
+    let change=()=>{
+        console.log(name, email, sal);
+    }
+
+    return(
+        <div>
+            <label htmlFor="">Name</label>
+            <input type="text" value={name} onChange={namedata}/>
+            <label htmlFor="">Email</label>
+            <input type="email" value={email} onChange={emaildata}/>
+            <label htmlFor="">Salary</label>
+            <input type="text" value={sal} onChange={saldata}/>
+
+            <button onClick={change}>Submit</button>
+        </div>
+    )
+}
+export default Controlled 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

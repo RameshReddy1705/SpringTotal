@@ -1,0 +1,12 @@
+
+npx create-react-app crud
+
+npm i axios
+
+npm i react-router-dom
+
+
+npm i json-server
+
+
+npx json-server Backend/db.json --watch port 5000

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Document</title>
+       <style>
+            body{
+                background: #ececec;
+            }
+            body *{
+                transition: all 0.5s ease;
+            }
+            input[type="range"] {
+                -webkit-appearance: none;
+                width: 100%;
+                background: transparent;
+            }
+
+            input[type="range"]::-webkit-slider-thumb{
+                -webkit-appearance: none;
+            }
+            input[type="range"]:focus{
+                outline: none;
+            }
+            input[type="range"]::-webkit-slider-thumb{
+                -webkit-appearance: none;
+                height: 16px;
+                width: 16px;
+                border-radius: 100%;
+                background: #2a438a;
+                cursor: pointer;
+                margin-top: -6px;
+                z-index: 9;
+                position: relative;
+            }
+            input[type="range"]::-moz-range-thumb{
+                height: 16px;
+                width: 16px;
+                border-radius: 100%;
+                background: #2a438a;
+                cursor: pointer;
+                border: 0;
+                z-index: 9;
+                position: relative;
+            }
+       </style>
+</head>
+<body>
+    <div class="homeslider">
+        <div class="home">
+            <div class="roof"></div>
+            <div class="walls">
+                <div class="left">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+                </div>
+                <div class="right">
+                    <div class="window"></div>
+                    <div class="window"></div>
+                    <div class="window"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="spaceselected">
+            <ul></ul> <span>ROOMS</span>
+        </div>
+    </div>
+    
+</body>
+</html>

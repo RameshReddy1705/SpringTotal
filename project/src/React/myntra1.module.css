@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 25px gray;
+    display: flex;
+    justify-content: center;
+}
+#nav>article{
+    height: 80px;
+    width: 93%;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+#nav>article>.Logo{
+    height: 80px;
+    width: 6%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav>article>.Logo>a>img{
+    height: 65%;
+    width: 60%;
+}
+#nav>article>.Menu{
+    height: 80px;
+    width: 40%;
+    /* background-color: brown; */
+}
+#nav>article>.Menu>ol{
+    display: flex;
+    list-style-type: none;
+    height: 79px;
+    align-items: center;
+    color: black;
+    justify-content: space-evenly;
+}
+
+#nav>article>.Menu>ol>li>a{
+    text-decoration: none;
+    color: rgb(61, 59, 59);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+sup{
+    color: rgb(249, 4, 139);
+    padding: 5px;
+    size: small;
+}
+#nav>article>.Search{
+    height: 80px;
+    width: 30%;
+    /* background-color: burlywood; */
+}
+#nav>article>.Search>div{
+    display: flex;
+    align-items: center;
+    height: 79px;
+    outline: none;
+    /* width: 90%; */
+    /* list-style-type: none; */
+    
+}
+#nav>article>.Search>div>input{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    width: 400px;
+    padding: 10px;    
+}
+#nav>article>.Search>div>input:focus{
+    background-color: whitesmoke;
+    outline: none;
+}
+#nav>article>.Search>div>a>i{
+    margin-right: 15px;
+    margin-left: 10px;
+    color: gray;
+}
+#nav>article>.Icons{
+    height: 80px;
+    width: 24%;
+    /* background-color: chocolate; */
+}
+#nav>article>.Icons>ol{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+#nav>article>.Icons>ol>li>a>img{
+    height: 30px;
+    width: 50px;
+    
+}
+
+

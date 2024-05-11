@@ -1,0 +1,111 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+
+}
+#navbar{
+    height: 90px;
+    width: 100%;
+    /* background-color:rgb(110, 18, 75);  */
+    display: flex;
+    background: #0001;
+    /* justify-content: center; */
+    
+}
+#navbar>article{
+    height: 80px;
+    width: 99%;
+    /* border: 2px solid red; */
+    display: flex;
+   
+}
+
+#navbar>article>.first{
+    height: 80px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+    /* background-color: aqua; */
+}
+#navbar>article>.second{
+    height: 80px;
+    width: 50%;
+    /* background-color: darkmagenta; */
+}
+#navbar>article>.first>ul>li>img{
+    width:60px;
+    
+    justify-content: center;
+    margin-left: 17%;
+}
+#navbar>article>.third{
+    height: 80px;
+    width: 20%;
+    /* margin-left: 6%; */
+    /* margin-right: 2%; */
+    /* background-color: rgb(0, 139, 30); */
+}
+#navbar>article>.forth{
+    height: 80px;
+    width: 20%;
+    margin-left: 6%;
+    margin-right: 2%;
+    /* background-color: rgb(0, 139, 30); */
+}
+#navbar>article>.second>ul{
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: large;
+    
+}
+/* #section>article>.menu>ol>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 50px;
+}
+ #section>article>.div2>ul>li:hover{
+color: green;
+} */ 
+#navbar>article>.third>ul{
+    height: 75px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size:large;
+    }
+    #navbar>article>.forth>ul{
+        height: 75px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        list-style-type: none;
+        font-size:large;
+        }
+        #navbar>article>.forth>ul>li{
+            font-size: larger;
+            margin-left: 25%;
+            
+        }
+        #navbar>article>.first>ul{
+            list-style-type: none;
+            margin-top: 17px;
+            margin-left: 20px;
+        }
+
+#section>article>.div3>ul>li{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#navbar>article>.second>ul>li{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
