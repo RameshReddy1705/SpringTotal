@@ -1,0 +1,6 @@
+127.0.0.1 - - [25/Dec/2022:11:11:17 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [25/Dec/2022:11:11:18 +0530] "GET /Ram_Proj/ HTTP/1.1" 200 426
+0:0:0:0:0:0:0:1 - - [25/Dec/2022:11:11:40 +0530] "GET /Ram_Proj/NTR?f=Ramesh&l=Reddy&p=&n=Siva+Reddy&Request+Submit=Submit+Query HTTP/1.1" 200 102
+0:0:0:0:0:0:0:1 - - [25/Dec/2022:11:12:21 +0530] "GET /Ram_Proj/NTR?f=Ramesh+Reddy&l=Gangannagari&p=9705582615&n=Siva+Reddy&Request+Submit=Submit+Query HTTP/1.1" 200 125
+127.0.0.1 - - [25/Dec/2022:11:28:26 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [25/Dec/2022:11:28:49 +0530] "GET /Ram_Proj/NTR?f=Ram&l=Gan&p=9705582615&n=Siva&Request+Submit=Submit+Query HTTP/1.1" 200 101

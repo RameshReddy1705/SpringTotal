@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Conn.AgeComparetor&apos; to &apos;AgeComp&apos;&#x0D;&#x0A;- Original project: &apos;OOPS_Proj&apos;&#x0D;&#x0A;- Original element: &apos;Conn.AgeComparetor&apos;&#x0D;&#x0A;- Renamed element: &apos;Conn.AgeComp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AgeComparetor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Conn{AgeComparetor.java[AgeComparetor" matchStrategy="1" name="AgeComp" qualified="false" references="true" similarDeclarations="false" stamp="1671555621176" textual="false" version="1.0"/>
+</session>

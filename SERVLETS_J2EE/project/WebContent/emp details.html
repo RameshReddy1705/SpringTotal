@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee details </title>
+<style>
+    fieldset {
+        background-color: grey;
+        width: 500px;
+        height:300px;
+        border:1px solid black;
+        padding:20px;
+        margin:450px;
+    }
+    h1{
+        background-color: aqua;
+        border:1px solid navy;
+        border-radius: 8px;
+        padding: 6px;
+        text-align:center;
+        
+    }
+    label{
+        width: 100px;
+        display: inline-block;
+    }
+    #submit {
+        margin:auto;
+        display: block;
+        margin-top: 20px;
+        padding: 20px 40px 20px 40px ;
+        font-size: 15px;
+        color: green;
+    }
+   </style>
+</head>
+<body>
+<form action="emp.jsp">
+
+<fieldset>
+    <h1> REGISTRATION</h1>
+    
+                
+ 
+    <label>Name</label>
+    <input type="text" id="emp" name="name"><br><br>
+    <label>Employee ID</label>
+    <input type="number"  id="emp" name="id"><br><br>
+    <label>Password</label>
+    <input type="password" id="emp" name="password"><br><br>
+    <label>Reporting Manager</label>
+    <input type="text" name="manager" ><br><br>
+    
+    <input type="submit" value="SUBMIT" id="submit">
+    
+    </fieldset>
+    </form>
+
+
+</body>
+</html>
